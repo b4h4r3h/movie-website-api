@@ -302,7 +302,7 @@ root.render(
         </div>
       </div>
     </div>
-    <Calculator></Calculator>
+    {/* <Calculator></Calculator> */}
   </Fragment>
 );
 
