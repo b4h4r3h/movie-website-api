@@ -269,7 +269,7 @@ root.render(
   <div>
     <div className='bg movie-poster'>
     {/* <img src='https://static.namava.ir/Content/Upload/Images/420744a4-432b-47ec-ac87-742020710e2a.jpg?anchor=middlecenter&crop=auto&scale=both&w=1920&h=900' className='background'></img> */}
-      <div className='wrapper~'>
+      <div className='wrapper'>
         <p className='big-title'> سریــال گارسیـــا</p>
         <div className='flex-40gap-row'>
           <div className='flex-8gap-row'>
