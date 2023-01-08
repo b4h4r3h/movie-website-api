@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MovieBox from './movieBoxComponent';
-import "./style.css"
-import "./Font.css"
+import {Message} from "./message"
+import MovieBox from './movieBox';
 const movie = {
   "mostviewedvideos": [
     {
@@ -29,9 +28,7 @@ const movie = {
       "autoplay": true,
       "video_date_status": "notset",
       "360d": false,
-      "deleteurl": "",
-      "imdb": 8.9,
-      "rate": 97+ "%"
+      "deleteurl": ""
     },
     {
       "id": "49557418",
@@ -54,9 +51,7 @@ const movie = {
       "autoplay": true,
       "video_date_status": "notset",
       "360d": false,
-      "deleteurl": "",
-      "imdb": 3.4,
-      "rate": 82+ "%"
+      "deleteurl": ""
     },
     {
       "id": "49540307",
@@ -79,9 +74,7 @@ const movie = {
       "autoplay": true,
       "video_date_status": "notset",
       "360d": false,
-      "deleteurl": "",
-      "imdb": 5.5,
-      "rate": 71+ "%"
+      "deleteurl": ""
     },
     {
       "id": "49571302",
@@ -104,9 +97,7 @@ const movie = {
       "autoplay": true,
       "video_date_status": "notset",
       "360d": false,
-      "deleteurl": "",
-      "imdb": 6.7,
-      "rate": 68+ "%"
+      "deleteurl": ""
     },
     {
       "id": "49571446",
@@ -129,9 +120,7 @@ const movie = {
       "autoplay": true,
       "video_date_status": "notset",
       "360d": false,
-      "deleteurl": "",
-      "imdb": 7.3,
-      "rate": 55+ "%"
+      "deleteurl": ""
     },
     {
       "id": "49572001",
@@ -154,9 +143,7 @@ const movie = {
       "autoplay": true,
       "video_date_status": "notset",
       "360d": false,
-      "deleteurl": "",
-      "imdb": 8.2,
-      "rate": 64+ "%"
+      "deleteurl": ""
     },
     {
       "id": "49570514",
@@ -179,9 +166,30 @@ const movie = {
       "autoplay": true,
       "video_date_status": "notset",
       "360d": false,
-      "deleteurl": "",
-      "imdb": 9.1,
-      "rate": 97+ "%"
+      "deleteurl": ""
+    },
+    {
+      "id": "49573418",
+      "title": "نخست‌وزیر چگونه «دلالی» را به دربار آورد",
+      "username": "farhikhteganonline",
+      "userid": "7026142",
+      "visit_cnt": 699,
+      "uid": "mwyU6",
+      "isHidden": false,
+      "process": "done",
+      "big_poster": "https://static.cdn.asset.aparat.com/avt/49573418-7098-b__3975.jpg",
+      "small_poster": "https://static.cdn.asset.aparat.com/avt/49573418-7098__3975.jpg",
+      "profilePhoto": "https://www.aparat.com/public/public/user_data/profile_photo/2343/7026142-m.jpg",
+      "duration": 121,
+      "sdate": "10 دی 1401",
+      "create_date": "2022-12-31 15:04:31",
+      "sdate_timediff": 90704,
+      "frame": "https://www.aparat.com/video/video/embed/videohash/mwyU6/vt/frame",
+      "official": "yes",
+      "autoplay": true,
+      "video_date_status": "notset",
+      "360d": false,
+      "deleteurl": ""
     },
     {
       "id": "32186244",
@@ -204,9 +212,7 @@ const movie = {
       "autoplay": true,
       "video_date_status": "notset",
       "360d": false,
-      "deleteurl": "",
-      "imdb": 6.2,
-      "rate": 54+ "%"
+      "deleteurl": ""
     },
     {
       "id": "32193876",
@@ -229,9 +235,7 @@ const movie = {
       "autoplay": true,
       "video_date_status": "notset",
       "360d": false,
-      "deleteurl": "",
-      "imdb": 3.4,
-      "rate": 43+ "%"
+      "deleteurl": ""
     },
     {
       "id": "32200093",
@@ -254,9 +258,7 @@ const movie = {
       "autoplay": true,
       "video_date_status": "notset",
       "360d": false,
-      "deleteurl": "",
-      "imdb": 7.6,
-      "rate": 55+ "%"
+      "deleteurl": ""
     }
   ],
   "ui": {
@@ -267,42 +269,9 @@ const movie = {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    <div className='bg movie-poster'>
-    {/* <img src='https://static.namava.ir/Content/Upload/Images/420744a4-432b-47ec-ac87-742020710e2a.jpg?anchor=middlecenter&crop=auto&scale=both&w=1920&h=900' className='background'></img> */}
-      <div className='wrapper~'>
-        <p className='big-title'> سریــال گارسیـــا</p>
-        <div className='flex-40gap-row'>
-          <div className='flex-8gap-row'>
-            <img className='icon-24' src={require('./assets/heart black.png')}></img>
-            {/* age jarime sham eshkal nadare, be bug khordam raftam donbale rahe hallesh */}
-            <span className="font-bold vazirfa description-size">78%</span>
-          </div>
-          <p className='description-size'>IMDB: 7.1</p>
-          <p className='description-size'>دوبله اختصاصی سایت</p>
-        </div>
-        <p>
-        آنتونیا یک خبرنگار جوان است که به‌ طور تصادفی یک جاسوس حرفه ای به نام گارسیا را که به مدت <br>
-        </br>چند دهه توسط سرویس ‌های مخفی منجمد شده بود، آزاد می کند و...
-        </p>
-      </div>
-    </div>
-    <div className='wrapper'>
-      <div className='ov'>
-        <div className='section-margin-top'>
-          <p className='p-white title-font-size'>جدیدترین ها</p>
-          <MovieBox data={movie}></MovieBox>
-        </div>
-        <div className='section-margin-top'>
-          <p className='p-white title-font-size'>علمی تخیلی</p>
-          <MovieBox data={movie}></MovieBox>
-        </div>
-        <div className='section-margin-top'>
-          <p className='p-white title-font-size'>ویژه های سریالی</p>
-          <MovieBox data={movie}></MovieBox>
-        </div>
-      </div>
-    </div>
-  </div>
+<Message text="one"><p>ten</p></Message>
+<MovieBox data={movie}/>
+</div>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,92 @@
+.img{
+    width: 440px;
+    height: auto;
+    border-radius: 16px;
+}
+body{
+    direction: rtl;
+    background: #111;
+    font-family: Vazirmatn;
+}
+.movie-box{
+    display: flex;
+    gap: 16px;
+}
+.ov{
+    overflow: hidden;
+}
+.wrapper{
+    padding: 0 64px;
+}
+.bg{
+    background-image: url(https://static.namava.ir/Content/Upload/Images/420744a4-432b-47ec-ac87-742020710e2a.jpg?anchor=middlecenter&crop=auto&scale=both&w=1920&h=900);
+    height: 600px;
+    position: relative;
+}
+.p-white{
+    color: #fff;
+}
+.description-size{
+    font-size: 14px;
+}
+.title-font-size{
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-margin-top{
+    margin-top: 40px;
+}
+.hover-box-parent{
+    position: relative;
+}
+.hover-box{
+    opacity: 0;
+    border-radius: 16px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97%;
+    background-color: rgba(0, 0, 0, 0.77);
+}
+.hover-box:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.hover-item{
+    position: absolute;
+    bottom: 12px;
+    right: 8px;
+
+}
+.font-bold{
+    font-weight: 600;
+}
+.flex-8gap-row{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.flex-40gap-row{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.vazirfa{
+    font-family: VazirmatnFa;
+}
+.big-title{
+    font-size: 56px;
+    font-weight: 600;
+    margin: 0;
+}
+.movie-poster{
+    display: flex;
+    align-items: center;
+}
+.icon-24{
+    width: 24px;
+    height: 24px;
+}
