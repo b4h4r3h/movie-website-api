@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import MovieBox from './movieBoxComponent';
 import "./style.css"
 import "./Font.css"
+// import {Calculator} from "./calculator"
 const movie = {
   "mostviewedvideos": [
     {
@@ -281,8 +282,7 @@ root.render(
           <p className='description-size'>دوبله اختصاصی سایت</p>
         </div>
         <p>
-        آنتونیا یک خبرنگار جوان است که به‌ طور تصادفی یک جاسوس حرفه ای به نام گارسیا را که به مدت <br>
-        </br>چند دهه توسط سرویس ‌های مخفی منجمد شده بود، آزاد می کند و...
+        آنتونیا یک خبرنگار جوان است که به‌ طور تصادفی یک جاسوس <br></br>حرفه ای به نام گارسیا را که به مدت چند دهه توسط <br></br>سرویس ‌های مخفی منجمد شده بود، آزاد می کند و...
         </p>
       </div>
     </div>
@@ -302,6 +302,7 @@ root.render(
         </div>
       </div>
     </div>
+    <Calculator></Calculator>
   </Fragment>
 );
 
