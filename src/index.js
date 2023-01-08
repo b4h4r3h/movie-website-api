@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment, fragment} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -266,7 +266,7 @@ const movie = {
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
+  <Fragment>
     <div className='bg movie-poster'>
     {/* <img src='https://static.namava.ir/Content/Upload/Images/420744a4-432b-47ec-ac87-742020710e2a.jpg?anchor=middlecenter&crop=auto&scale=both&w=1920&h=900' className='background'></img> */}
       <div className='wrapper'>
@@ -302,7 +302,7 @@ root.render(
         </div>
       </div>
     </div>
-  </div>
+  </Fragment>
 );
 
 // If you want to start measuring performance in your app, pass a function
