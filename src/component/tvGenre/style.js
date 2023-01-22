@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { GlobalStyle } from "../../styles/globalStyles";
 import { black20percent, linearPurpleBlue, white } from "../../styles/colors";
 import { darkLinear } from "../../styles/colors";
+import { darkLinearReverse } from "../../styles/colors";
 export const TvGenres = styled.div `
 .genre-list{
     display:flex;
@@ -20,6 +21,7 @@ export const TvGenres = styled.div `
     height:56px;
     background:${darkLinear};
     border-radius:8px;
+    transition:.2s ease-in-out 0s;
 }
 .genre-content-father:hover{
     cursor: pointer;

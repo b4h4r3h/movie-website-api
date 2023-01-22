@@ -28,7 +28,7 @@ export default function TvGenre() {
     }, [])
     return (
         <TvGenres>
-        <div className="wrapper">
+        <div className="wrapper margin-bottom">
             <h2>Tv Genre</h2>
             <div className="genre-list">{renderFarm()}</div>
         </div>

@@ -5,4 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     margin:0 auto;
     overflow: hidden;
 }
+.margin-bottom{
+    margin-bottom: 40px;
+}
 `;
