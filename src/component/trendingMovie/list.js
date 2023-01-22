@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {api} from "../../utils/api/index"
+import {api} from "../../utils/api/index";
 import { textDots } from "../../utils/textDots";
 import { GlobalStyle } from "../../styles/globalStyles";
 import { TrendingMovies } from "./style";
@@ -7,7 +7,7 @@ export default function TrendingMovie() {
     const [movie, setMovie] = useState([]);
     async function getApi() {
         const response = await api.get("/trending/movie/week",{params:{
-            api_key: "a979f69c99c2d7a91357437fe8871523" 
+            api_key: "a979f69c99c2d7a91357437fe8871523"
         }});
         setMovie(response.data.results)
     }
@@ -27,7 +27,7 @@ export default function TrendingMovie() {
                     <div  className="movie-card" >
                         <div className="hover-parent">
                             <img src={`https://image.tmdb.org/t/p/w500${poster_path}`}/>
-                            <div className="hover-box">
+                                <div className="hover-box">
                                 <p>Vote: {vote_average}</p>
                             </div>
                         </div>

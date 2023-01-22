@@ -9,6 +9,8 @@ import TrendingMovie from './component/trendingMovie/list';
 import TrendingTv from './component/trendingTV';
 import TrendingPerson from './component/person';
 import { GlobalStyle } from './styles/globalStyles';
+import MovieGenre from './component/movieGenre';
+import TvGenre from './component/tvGenre';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Fragment>
@@ -18,6 +20,8 @@ root.render(
     <TrendingMovie/>
     <TrendingTv/>
     <TrendingPerson/>
+    <MovieGenre/>
+    <TvGenre/>
   </Fragment>
 );
 // If you want to start measuring performance in your app, pass a function
